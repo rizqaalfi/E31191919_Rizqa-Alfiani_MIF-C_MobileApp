@@ -15,8 +15,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-
-
 public class MainActivity extends AppCompatActivity {
     String[] daftar;
     ListView ListView01;

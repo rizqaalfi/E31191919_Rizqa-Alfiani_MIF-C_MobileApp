@@ -26,6 +26,9 @@ public class ViewBiodata extends AppCompatActivity {
         text4 = (TextView) findViewById(R.id.textView4);
         text5 = (TextView) findViewById(R.id.textView5);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        // membentuk kueri SQL dan mengirimkannya sebagai rawQuery ke database yang mengembalikan kursor
+        // ke aktifitas pemanggil/adapter
         cursor = db.rawQuery("SELECT * FROM biodata WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'",null);
         cursor.moveToFirst();

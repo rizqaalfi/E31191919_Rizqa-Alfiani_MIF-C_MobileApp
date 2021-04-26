@@ -27,6 +27,8 @@ public class UpdateBiodata extends AppCompatActivity {
         text4 = (EditText) findViewById(R.id.editText4);
         text5 = (EditText) findViewById(R.id.editText5);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        //mengembalikan kursor ke aktifitas pemanggil/adapter
         cursor = db.rawQuery("SELECT * FROM biodata WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'",null);
         cursor.moveToFirst();
