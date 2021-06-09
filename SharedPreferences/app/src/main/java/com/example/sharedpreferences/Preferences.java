@@ -8,7 +8,7 @@ import android.preference.PreferenceManager;
 public class Preferences {
 
 //	Mendeklarasikan key-data berupa String, sebagai wadah penyimpanan data
-// ( Setiap data mempunyai key yang berbeda
+// ( Setiap data mempunyai key yang berbeda )
 static final String KEY_USER_TEREGISTER = "user", KEY_PASS_TEREGISTER = "pass";
 static final String KEY_USERNAME_SEDANG_LOGIN = "Username_logged_in";
 static final String KEY_STATUS_SEDANG_LOGIN = "Status_logged_in";
@@ -18,7 +18,7 @@ private static  SharedPreferences getSharedPreferences ( Context context){
 	return PreferenceManager.getDefaultSharedPreferences(context);
 }
 
-// Mendeklarasikan edit preferences dan mengubah data dengan paramter username
+// Mendeklarasikan edit preferences dan mengubah data dengan parameter username
 public static void setRegisteredUser ( Context context, String username){
 	SharedPreferences.Editor editor = getSharedPreferences(context).edit();
 	editor.putString(KEY_USER_TEREGISTER, username);

@@ -1,4 +1,4 @@
-package com.example.sharedpreferences;
+ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,9 +27,6 @@ protected void onCreate(Bundle savedInstanceState) {
 	mViewPassword.setOnEditorActionListener(new TextView.OnEditorActionListener(){
 		@Override
 
-//		EditorInfo menjelaskan beberapa atribut objek pengeditan teks yang berkomunikasi
-//		dengan metode masukan (biasanya EditText), yang terpenting adalah jenis konten teks
-//		yang dikandungnya dan posisi kursor saat ini. ( menggunakan enter )
 		public boolean onEditorAction ( TextView v, int actionId, KeyEvent event){
 			if (actionId == EditorInfo.IME_ACTION_DONE || actionId == EditorInfo.IME_NULL){
 				razia();
